@@ -9,4 +9,5 @@
  */
 
 $string['pluginname'] = 'Test accounts Automation';
-$string['blocktitle'] = 'Create Test Accounts';
+$string['blocktitle'] = 'Test Accounts';
+$string['createtestaccounts'] = 'Create Test Accounts';
