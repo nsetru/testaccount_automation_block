@@ -28,9 +28,10 @@ class block_testaccount_automation extends block_base{
             return $this->content;
         }
         
+        $courseid = $this->page->course->id;
         $this->content = new stdClass();
         $this->content->text = 'Testing content text';
-        $this->content->footer = '<div><a href='.$CFG->wwwroot.'/local/testaccount_automation/index.php>'.  get_string('createtestaccounts', 'block_testaccount_automation').'</a></div>';
+        $this->content->footer = '<div><a href='.$CFG->wwwroot.'/local/testaccount_automation/index.php?id='.$courseid.'>'.  get_string('createtestaccounts', 'block_testaccount_automation').'</a></div>';
         
     }
 }
